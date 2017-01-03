@@ -1,0 +1,27 @@
+{
+  "name": "foxitrdk",
+  "version": "1.0.0",
+  "description": "Cordova Foxit RDK Plugin For Android",
+  "cordova": {
+    "id": "cordova-plugin-foxitrdk",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yongliang-huang/cordova-plugin-foxitrdk"
+  },
+  "keywords": [
+    "PDF",
+    "FoixtRDK",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Charles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yongliang-huang/cordova-plugin-foxitrdk/issues"
+  },
+  "homepage": "https://github.com/yongliang-huang/cordova-plugin-foxitrdk#README.md"
+}
