@@ -1,5 +1,5 @@
 # cordova-plugin-foxitrdk
-
+    Cordova Foxit RDK Plugin For Android
 # Installation
     cordova plugin add cordova-plugin-foxitrdk
 
