@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-foxitrdk" version="1.0.0">
+    <name>FoxitRDK</name>
+    <js-module name="FoxitRDK" src="www/FoxitRDK.js">
+        <clobbers target="cordova.plugins.FoxitRDK"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="FoxitRDK">
+                <param name="android-package" value="FoxitRDK.FoxitRDK"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+        <source-file src="src/android/FoxitRDK.java" target-dir="src/FoxitRDK"/>
+        <source-file src="src/android/libs/armeabi-v7a/librdk.so" target-dir="libs/armeabi-v7a"/>
+
+        <framework src="com.android.support:appcompat-v7:23.4.0" />
+        <framework src="src/android/libs/FoxitRDKUIExtensions.gradle" custom="true" type="gradleReference" />
+        <resource-file src="src/android/libs/FoxitRDKUIExtensions.aar" target="libs/FoxitRDKUIExtensions.aar"/>
+    </platform>
+</plugin>
