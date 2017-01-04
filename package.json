@@ -1,5 +1,5 @@
 {
-  "name": "foxitrdk",
+  "name": "cordova-plugin-foxitrdk",
   "version": "1.0.0",
   "description": "Cordova Foxit RDK Plugin For Android",
   "cordova": {
